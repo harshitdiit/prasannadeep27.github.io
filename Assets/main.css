@@ -1,0 +1,777 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700');
+
+/*Responsive*/
+
+@media screen and (max-width: 2580px) {
+  html{
+    font-size: 26px;
+  }
+  .portfolio-project > #right{
+    height: 17.75rem !important;
+  }
+  .landing-proj > #right{
+    height: 17.75rem !important;
+  }
+}
+
+
+@media screen and (max-width: 1980px) {
+  html{
+    font-size: 20px;
+  }
+  .portfolio-project > #right{
+    height: 17.75rem !important;
+  }
+  .landing-proj > #right{
+    height: 17.75rem !important;
+  }
+}
+
+@media screen and (max-width: 1580px) {
+  html{
+    font-size: 17px;
+  }
+  .portfolio-project > #right{
+    height: 17.25rem !important;
+  }
+  .landing-proj > #right{
+    height: 17.25rem !important;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  html{
+    font-size: 16px;
+  }
+  .portfolio-project > #right{
+    height: 15.75rem !important;
+  }
+  .landing-proj > #right{
+    height: 15.75rem !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  html{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  html{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  html{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  html{
+    font-size: 5px;
+  }
+
+  #nav-left{
+    width: 22.5% !important;
+  }
+  #nav-right{
+    width: 20% !important;
+  }
+}
+
+/*CSS*/
+body{
+  width: 100%;
+  margin: auto;
+}
+
+#landing{
+  background: url("images/home_stock.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar{
+  margin-top: 3%;
+  width: 82%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-left{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 18%;
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 1.125rem;
+}
+
+#nav-left > a{
+  flex-grow: 1;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#nav-logo{
+  height: 2rem;
+  border-radius: 50%;
+}
+
+#nav-right{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+  font-family: "Muli";
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+#nav-right > a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#landing-intro{
+  font-family: "Muli";
+  font-weight: 700;
+  font-size: 2.75rem;
+  color: #ffffff;
+  text-align: left;
+}
+
+#landing-footer{
+  width: 82%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7%;
+}
+
+#landing-footer > #footer-left > #footer-img{
+  height: 2.125rem;
+}
+
+#landing-footer > #footer-right{
+  transform: rotate(90deg) translateX(-3.25rem) translateY(-4.125rem);
+  font-family: "Muli";
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.15rem;
+  width: 12%;
+  color: #ffffff;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#landing-footer > #footer-right > #footer-img{
+  height: 0.5rem;
+}
+
+#landing-port-container{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5rem;
+  margin: auto;
+}
+
+#landing-port-title{
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 3rem;
+  color: #2B2B2B;
+  margin: 7.5rem 0 1.25rem 0;
+}
+
+.landing-proj{
+  width: 65%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 3.75rem 0 3.75rem 0;
+}
+
+.landing-proj:nth-child(odd) > #left{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  order: 1;
+}
+
+.landing-proj:nth-child(even) > #left{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  order: 2;
+}
+
+.landing-proj:nth-child(odd) > span > .landing-rect{
+  width: 48.5%;
+  position: absolute;
+  left : 0;
+}
+
+.landing-proj:nth-child(even) > span > .landing-rect{
+  width: 48.5%;
+  position: absolute;
+  right : 0;
+}
+
+.landing-proj:nth-child(odd) > span > .landing-img{
+  width: 91.125%;
+  position: relative;
+}
+
+.landing-proj:nth-child(even) > span > .landing-img{
+  width: 91.125%;
+  position: relative;
+}
+
+.landing-proj:nth-child(odd) > #right{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+  height: 15.75rem;
+  text-align: left;
+  order: 2;
+}
+
+.landing-proj:nth-child(even) > #right{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+  height: 15.75rem;
+  text-align: left;
+  order: 1;
+}
+
+.landing-proj > #right > h2{
+  font-family: "Muli";
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #2B2B2B;
+  margin: 0 0 0 0;
+}
+
+.landing-proj > #right > h4{
+  font-family: "Muli";
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #5E5E5E;
+  line-height: 1.75rem;
+  margin: 0 0 0 0;
+}
+
+.landing-proj > #right > h3{
+  font-family: "Muli";
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #E7BD53;
+  margin: 0 0 0 0;
+}
+
+.landing-proj > #right > h5{
+  margin: 2rem 0 0 0;
+}
+
+.landing-proj > #right > h5 > a{
+  font-family: "Muli";
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #2B2B2B;
+  text-decoration: none;
+}
+
+#landing-port-bottom{
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 2rem;
+  color: #2B2B2B;
+  text-decoration: none;
+  margin: 3.75rem 0 7.5rem 0;
+}
+
+.footer{
+  background: #2B2B2B;
+  text-align: center;
+  border-bottom: 1rem solid #E7BD53;
+  padding: 3.75rem 0 3.75rem 0;
+}
+
+.footer > footer{
+  width: 82%;
+  margin: auto;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer > footer > #footer-left{
+  width: 47.5%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height : 17rem;
+}
+
+.footer > footer > #footer-left > h2{
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 3rem;
+  color: #ffffff;
+  margin: 0 0 0 0;
+}
+
+.footer > footer > #footer-left > h4{
+  font-family: "Muli";
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin: 0 0 0 0;
+}
+
+.footer > footer > #footer-left > span{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer > footer > #footer-left > span > h3{
+  font-family: "Muli";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0 0 0 0;
+}
+
+.footer > footer > #footer-left > span > img{
+  height: 1.75rem;
+  margin-right: 1rem;
+}
+
+.footer > footer > #footer-right{
+  width: 32%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height : 17rem;
+}
+
+.footer > footer > #footer-right > h2{
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 3rem;
+  color: #ffffff;
+  margin: 0 0 0 0;
+}
+
+.footer > footer > #footer-right > #footer-list{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 11rem;
+}
+
+.footer > footer > #footer-right > #footer-list > span{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer > footer > #footer-right > #footer-list > span > a{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Muli";
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 0 0 0;
+}
+
+.footer > footer > #footer-right > #footer-list > span > a > img{
+  height: 1.75rem;
+  margin-right: 1rem;
+}
+
+#portfolio-container{
+  background: #252525;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+#portfolio-title{
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 3rem;
+  color: #FFFFFF;
+  margin: 6.25rem 0 1.25rem 0;
+}
+
+#portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  width: 82%;
+}
+
+.portfolio-project{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 3.75rem 0 3.75rem 0;
+}
+
+.portfolio-project > #left{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.portfolio-project > span > .portfolio-rect{
+  width: 48.5%;
+  position: absolute;
+  left : 0;
+}
+
+.portfolio-project > #left > h2{
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 4.5rem;
+  color: #FFFFFF;
+  margin: 2rem 0 0 0;
+  z-index: 2;
+  align-self: flex-start;
+}
+
+.portfolio-project > span > .portfolio-img{
+  width: 71.5%;
+  position: relative;
+  right: 7%;
+}
+
+.portfolio-project > #right{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+  height: 15.75rem;
+}
+
+.portfolio-project > #right > h2{
+  font-family: "Muli";
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  margin: 0 0 0 0;
+}
+
+.portfolio-project > #right > h4{
+  font-family: "Muli";
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+  line-height: 1.75rem;
+  margin: 0 0 0 0;
+}
+
+.portfolio-project > #right > h3{
+  font-family: "Muli";
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #E7BD53;
+  margin: 0 0 0 0;
+}
+
+.portfolio-project > #right > a{
+  font-family: "Muli";
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  margin: 2rem 0 0 0;
+  text-decoration: none;
+}
+
+.portfolio-project > #right > a > h5{
+  margin: 0 0 0 0;
+}
+
+#project-container-upper{
+  background: #252525;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3.75rem;
+}
+
+#project-container-upper > #project-container-inner{
+  width: 65%;
+  margin: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#project-title{
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 3rem;
+  color: #FFFFFF;
+  margin: 6.5rem 0 1.25rem 0;
+}
+
+#project-desc{
+  font-family: "Muli";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-align: justify;
+  color: #E3E3E3;
+}
+
+#project-date{
+  font-family: "Muli";
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #E7BD53;
+  margin: 1.563rem 0 0.625rem 0;
+}
+
+#project-upper-image{
+  width: 100%;
+  margin: 1.875rem 0 1.875rem 0;
+}
+
+.project-upper-article{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1.875rem 0 1.875rem 0;
+}
+
+.project-upper-article > span{
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 2rem;
+  color: #FFFFFF;
+  margin-bottom: 1.25rem;
+}
+
+.project-upper-article > div{
+  font-family: "Muli";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-align: justify;
+  color: #E3E3E3;
+}
+
+#project-container-lower{
+  width: 65%;
+  margin: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.875rem 0 0 0;
+}
+
+#project-lower-image{
+  width: 100%;
+  margin: 1.875rem 0 1.875rem 0;
+}
+
+.project-lower-article{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1.875rem 0 1.875rem 0;
+}
+
+.project-lower-article > span{
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 2rem;
+  color: #2B2B2B;
+  margin-bottom: 1.25rem;
+}
+
+.project-lower-article > div{
+  font-family: "Muli";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-align: justify;
+  color: #424242;
+}
+
+#project-footer{
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6.25rem 0 7.5rem 0;
+}
+
+#project-footer > a{
+  font-family: "Muli";
+  font-weight: 700;
+  font-size: 1rem;
+  color: #000000;
+  text-decoration: none;
+}
+
+#about{
+  background: url("images/about_stock.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#about-intro{
+  width: 53.5rem;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8%;
+}
+
+#about-intro > img{
+  width: 22.5rem;
+}
+
+#about-intro > span{
+  font-family:"Muli";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  color: #FFFFFF;
+  width: 25rem;
+  text-align: left;
+}
+
+#about-lower{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.688rem 0 4.687rem 0;
+}
+
+#about-intro-lower{
+  width: 53.5rem;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4.688rem 0 4.687rem 0;
+}
+
+#about-intro-lower > img{
+  width: 22.5rem;
+}
+
+#about-intro-lower > span{
+  font-family:"Muli";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  color: #424242;
+  width: 25rem;
+  text-align: left;
+}
+
+#about-bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3.125rem 0 6.25rem 0;
+}
+
+#about-heading{
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 3rem;
+  color: #2B2B2B;
+  margin-bottom: 3.75rem;
+}
+
+.about-photos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 63.5rem;
+}
+
+#experiences-photos > img{
+  margin : 0 1rem 0 1rem;
+}
