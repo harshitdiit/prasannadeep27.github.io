@@ -16,8 +16,19 @@
   }
 }
 
+@media screen and (max-width: 2200px) {
+  html{
+    font-size: 22px;
+  }
+  .portfolio-project > #right{
+    height: 17.75rem !important;
+  }
+  .landing-proj > #right{
+    height: 17.75rem !important;
+  }
+}
 
-@media screen and (max-width: 2100px) {
+@media screen and (max-width: 1980px) {
   html{
     font-size: 20px;
   }
