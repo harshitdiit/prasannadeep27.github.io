@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Prasannadeep Das</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="shortcut icon" href="Assets/images/favicon.png">
+		<link rel="stylesheet" href="Assets/main.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="Assets/main.js"></script>
+  </head>
+  <body>
+    <section id="project-container-upper">
+
+      <div class="fixed-nav">
+        <nav class="navbar_fixed">
+          <span id="nav-left">
+            <a href="index.html"><img src="Assets/images/ranook.png" id="nav-logo"/><span>Prasannadeep Das</span></a>
+          </span>
+          <span id="nav-right">
+            <a href="portfolio.html" style="color:#E7BD53;font-weight:700">Portfolio</a>
+            <a href="about.html">About</a>
+          </span>
+        </nav>
+      </div>
+
+      <nav class="navbar" style="margin-top: 2%;">
+        <span id="nav-left">
+          <a href="index.html"><img src="Assets/images/ranook.png" id="nav-logo"/><span>Prasannadeep Das</span></a>
+        </span>
+        <span id="nav-right">
+          <a href="portfolio.html" style="color:#E7BD53; font-weight:700">Portfolio</a>
+          <a href="about.html">About</a>
+        </span>
+      </nav>
+
+      <section id="project-container-inner">
+        <span id="project-title">Parallel Chat</span>
+        <span id="project-desc">Switching from one chat to another after some time becomes tedious. Thus finding a convenient solution to this problem is what this concept design is all about.</span>
+        <span id="project-date">CONCEPT DESIGN | MARCH 2018</span>
+
+        <img id="project-upper-image" src="Assets/images/parallel_chat/portfolio_cover.png">
+
+        <article class="project-upper-article">
+          <span>Challenge</span>
+
+          <div>
+            To make chatting with multiple people at once much more convenient, I thought of this new concept of Parallel Chat. Switching from one chat to another after some time becomes tedious and it has been found that people miss out on important conversations while they are busy chatting with someone else.
+          </div>
+
+        </article>
+
+        <article class="project-upper-article">
+
+          <span>Idea</span>
+          <div>
+            Find a prominent space on the screen, which is easily accessible and doesn't hinder the functioning of the existing features. An element thus can be introduced there, which can somehow keep reminding of the incoming new messages.
+            </div>
+
+        </article>
+      </section>
+    </section>
+
+    <section id="project-container-lower">
+      <article class="project-lower-article">
+        <span>Research</span>
+
+        <div>
+          A Google Survey was conducted to which 112 people responded. The questions asked were regarding the daily chat experiences.<br><br>
+          <i><b>1. What is the average number of people you chat with paralllely, at the same time?</b></i>
+          </div>
+
+      </article>
+
+      <img id="project-upper-image" src="Assets/images/parallel_chat/img2.png">
+
+      <article class="project-lower-article">
+
+        <div>
+          <br><i><b>2.Has it ever happened to you, that while chatting with two or more people, you were busy texting one, and accidentally forgot about the other(s)?</b></i>
+        </div>
+
+      </article>
+
+
+      <img id="project-upper-image" src="Assets/images/parallel_chat/img3.png">
+
+      <article class="project-lower-article">
+
+        <span>The Solution</span>
+        <div>
+          According to a research-study, while using a messaging app, 90% of the time, the focus of the user is on the lower half of the screen, thus the upper half of the screen has a lot of space which can be used to introduce new elements/features.<br><br>
+Josh Clark, in his book Designing for Touch, states that 75% of interactions over mobile are thumb-driven. Thus keeping this in mind, the top-left corner of the screen can be hardly reached. The range we are left with is the triangle formed by the bottom-left, bottom-right and the top-right. As discussed above, the upper screen can be used for introducing a new element. <br><br>
+Thus I came to the conclusion that the space bellow the "options" (top-right), can be used to introduce the new element! A small grey clickable element, when clicked, would roll out a list of contacts the user had recently texted.<br><br>
+As a new message comes, a small clickable div rolls out from the right, showing the initial few words of the text received. The text then disappears after a few seconds and there is a change in the color of the element, thus reminding us of the new messages received.
+          </div>
+
+      </article>
+
+      <img id="project-upper-image" src="Assets/images/parallel_chat/img4.gif">
+
+      <article class="project-lower-article">
+        <span>Extra Edge</span>
+
+        <div>
+          While I was trying to find out a solution to this problem, I realised that there was another minor problem that came up while chatting parallely. Everytime I switch chats, it took me time to find out which were the new messages and which were the one's I had had received earlier.<br><br>
+          So I came up with this solution that the block of the older messages have gray border, and the block of the new messages have vibrant colors (The color depends on what the user choses).
+          </div>
+
+      </article>
+
+      <article class="project-lower-article">
+        <span>Homework</span>
+
+        <div>
+          First attempt, trying to find out the perfect layout, and where the new element can be placed.
+        </div>
+
+      </article>
+
+      <img id="project-upper-image" src="Assets/images/parallel_chat/img5.png">
+
+      <article class="project-lower-article">
+
+        <div>
+          Iterations for differentiation of the earlier received text from the one's received just now.
+        </div>
+
+      </article>
+
+      <img id="project-upper-image" src="Assets/images/parallel_chat/img6.png">
+
+      <article class="project-lower-article">
+
+        <div>
+          Finalisation of the new element, it's placement and it's functionality!
+        </div>
+
+      </article>
+
+        <img id="project-upper-image" src="Assets/images/parallel_chat/img7.png">
+
+      <footer id="project-footer">
+
+        <a href="#"><img src="Assets/images/arrow_br.png" style="height:0.5rem"/>&nbsp Prev Project</a>
+        <a href="portfolio.html"><img src="Assets/images/portfolio_menu.png" style="height:2.125rem"></a>
+        <a href="#">Next Project &nbsp <img src="Assets/images/arrow_b.png" style="height:0.5rem"/></a>
+
+      </footer>
+
+    </section>
+    <section class="footer">
+      <footer>
+        <div id="footer-left">
+          <h2>Let's Talk!</h2>
+          <h4>Want to make something great? Will be glad to help you! For any enquiries, or just to say hello, get in touch!</h4>
+          <span><img src="Assets/images/mail.png"><h3>pdas@ce.iitr.ac.in</h3></span>
+          <span><img src="Assets/images/phone.png"><h3>+91 - 80064 64672</h3></span>
+        </div>
+        <div id="footer-right">
+          <h2>Social Links</h2>
+          <div id="footer-list">
+            <span>
+              <a href="https://www.facebook.com/prasanna.das.921" target="_blank"><img src="Assets/images/facebook.png"/>Facebook</a>
+              <a href="https://www.instagram.com/ranook.xd/" target="_blank"><img src="Assets/images/instagram.png"/>Instagram</a>
+              <a href="https://www.linkedin.com/in/prasannadeep-das-803057132/" target="_blank"><img src="Assets/images/linkedin.png"/>Linked In</a>
+            </span>
+            <span>
+              <a href="https://dribbble.com/Prasanna_72" target="_blank"><img src="Assets/images/dribbble.png"/>Dribbble</a>
+              <a href="https://www.behance.net/prasannade5c46" target="_blank"><img src="Assets/images/behance.png"/>Behance</a>
+              <a href="https://github.com/prasannadeep27" target="_blank"><img src="Assets/images/github.png"/>Github</a>
+            </span>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
